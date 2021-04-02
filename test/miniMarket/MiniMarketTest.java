@@ -105,10 +105,10 @@ public class MiniMarketTest {
 	public void addPeopleCorrect3() throws DayNotAvailableException, UnderAgeException {
 
 		setupScenary3();
-
+		Document document = Document.PP;
+		
 		if(miniMarket.getLocalDate() % 2 != 0) {
 
-			Document document = Document.CE;
 			String id = "1196573577";
 			try {
 
@@ -120,7 +120,6 @@ public class MiniMarketTest {
 			assertTrue(miniMarket.getArrayPeople().isEmpty());
 		}
 		else {
-			Document document = Document.PP;
 			String id = "517861205";
 
 			try {
