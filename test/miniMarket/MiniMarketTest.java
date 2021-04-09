@@ -113,11 +113,11 @@ public class MiniMarketTest {
 			try {
 
 				miniMarket.addPeople(document, id);
+				fail();
 
 			}catch(DayNotAvailableException dnae) {
 
 			}
-			assertTrue(miniMarket.getArrayPeople().isEmpty());
 		}
 		else {
 			String id = "517861205";
@@ -125,11 +125,11 @@ public class MiniMarketTest {
 			try {
 
 				miniMarket.addPeople(document, id);
-
+				fail();
+				
 			}catch(DayNotAvailableException dnae) {
 
 			}
-			assertTrue(miniMarket.getArrayPeople().isEmpty());
 		}
 
 	}
